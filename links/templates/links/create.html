@@ -1,8 +1,8 @@
 {% extends 'links/_base.html' %}
 {% block content %}
     <form action="" method="POST">
-    {% csrf_token %}
-        <input type="text" name="link">
+        {% csrf_token %}
+        {{ form }}
         <input type="submit" value="Create">
     </form>
 {% endblock content %}
